@@ -5,49 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>guess game</title>
+    <title>crystal collector</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- DOC LINKAGE -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="reset" href="assets/css/reset.css">
-    <script src="assets/javascript/game.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
     <!-- DOC LINKAGE END -->
-
+    <header class="display-4">crystal collector!</header>
     <div class="jumbotron jumbotron-fluid">
-        
-                <div class='col-md-6'>
-                    <h1 class="display-4">word guess game!</h1>
-                    <p class="lead">
-
-                        <h1>press any key to start guessing!</h1>
-
-                        <h3>you chose : <span id="userChoice"></span></h3>
-
-                    </p>
+        <br>
+        <h3>select crystals to attain the target displayed</h3>
+        <h3>if you go over you lose, if you get the number exactly you win!</h3>
+        <h3>press the start/restart button to begin the game</h3>
+        <p class="lead">
+            <div class="container">
+                <div class="row">
+                    <button><img id="startButton"
+                            src="assets/images/start-button-on-a-white-background_hda2soyd__F0000.png">
+                    </button>
                 </div>
+                <br>
+                <div class="row">
+                    <button>
+                        <div class="col-md-2"><img id="yellowButton" src="assets/images/WBCCODE2.jpg"> </div>
+                    </button>
+                    <button>
+                        <div class="col-md-2"><img id="blueButton" src="assets/images/WBCCODE3.jpg"> </div>
+                    </button>
+                    <button>
+                        <div class="col-md-2"><img id="greenButton" src="assets/images/WBCCODE4.jpg"> </div>
+                    </button>
+                    <button>
+                        <div class="col-md-2"><img id="redButton" src="assets/images/WBCCODE5.jpg"> </div>
+                    </button>
+
+                </div>
+                <div class="row">
+                    <h1>current: <span id="currentAmount"></span></h1>
+                </div>
+                <div class="row">
+                    <h1>target:<span id="targetScore"></span></h1>
+                </div>
+                <div class="row">wins:<span id="wins"></span></div>
+                <div class="row">losses:<span id="losses"></span></div>
             </div>
-        </div>
+
+            <div clss="row">
+
+            </div>
+
+
+    </div>
+
+    </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
 
 
-    <h2> you have <span id="guessAmount"></span> guesses remaining!</h2>
 
-    <!-- correct answer is banana -->
-    <h3>_ _ _ _ _ _</h3>
+
 
 
 </body>
