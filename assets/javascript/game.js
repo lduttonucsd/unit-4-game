@@ -10,6 +10,15 @@ $(document).ready(function () {
     // each crystal will be assigned a random value between 1-12 at start of round
     $("#startButton").on("click", function () {
         resetValue()
+<<<<<<< HEAD
+        console.log("yellow " + yellowButtonX);
+        console.log("red " + redButtonX);
+        console.log("blue " + blueButtonX);
+        console.log("green " + greenButtonX);
+        console.log("targetAmt " + targetAmountX);
+        $("#targetScore").text(targetAmountX);
+
+=======
         // console.log ("yellow " + yellowButtonX);
         // console.log ("red " + redButtonX);
         // console.log ("blue " + blueButtonX);
@@ -17,6 +26,7 @@ $(document).ready(function () {
         // console.log("targetAmt " + targetAmountX);
         $("#targetScore").text(targetAmountX);
         
+>>>>>>> ae02433fce390806e88a7d3edd972aaa40b309a6
     });
 
     function resetValue() {
@@ -24,10 +34,21 @@ $(document).ready(function () {
         $("#currentAmount").text(currentAmtX)
         targetAmountX = Math.floor(Math.random() * 120) + 19;
         $("#targetAmount").text(targetAmountX)
+<<<<<<< HEAD
+        greenButtonX = Math.floor(Math.random() * 12) + 1;
+        blueButtonX = Math.floor(Math.random() * 12) + 1;
+        redButtonX = Math.floor(Math.random() * 12) + 1;
+        yellowButtonX = Math.floor(Math.random() * 12) + 1;
+    };
+
+    var currentAmtX = 0
+    // yellow button stuff
+=======
     };
 
     var currentAmtX = 0
 // yellow button stuff
+>>>>>>> ae02433fce390806e88a7d3edd972aaa40b309a6
     $("#yellowButton").on("click", function () {
         currentAmtX = currentAmtX + yellowButtonX;
         $("#currentAmount").text(currentAmtX);
@@ -45,6 +66,64 @@ $(document).ready(function () {
         }
 
     });
+<<<<<<< HEAD
+    // red button stuff
+    $("#redButton").on("click", function () {
+        currentAmtX = currentAmtX + redButtonX;
+        $("#currentAmount").text(currentAmtX);
+
+
+        if (targetAmountX === currentAmtX) {
+            alert("win");
+            winsX++
+            $("#wins").text(winsX)
+        }
+        else if (targetAmountX < currentAmtX) {
+            alert("lose");
+            lossesX++
+            $("#losses").text(lossesX)
+        }
+
+    });
+
+    // blue button stuff
+    $("#blueButton").on("click", function () {
+        currentAmtX = currentAmtX + blueButtonX;
+        $("#currentAmount").text(currentAmtX);
+
+
+        if (targetAmountX === currentAmtX) {
+            alert("win");
+            winsX++
+            $("#wins").text(winsX)
+        }
+        else if (targetAmountX < currentAmtX) {
+            alert("lose");
+            lossesX++
+            $("#losses").text(lossesX)
+        }
+
+    });
+
+    // green button stuff 
+    $("#greenButton").on("click", function () {
+        currentAmtX = currentAmtX + greenButtonX;
+        $("#currentAmount").text(currentAmtX);
+
+
+        if (targetAmountX === currentAmtX) {
+            alert("win");
+            winsX++
+            $("#wins").text(winsX)
+        }
+        else if (targetAmountX < currentAmtX) {
+            alert("lose");
+            lossesX++
+            $("#losses").text(lossesX)
+        }
+
+    });
+=======
 // red button stuff
 $("#redButton").on("click", function () {
     currentAmtX = currentAmtX + redButtonX;
@@ -101,6 +180,7 @@ $("#greenButton").on("click", function () {
     }
 
 });
+>>>>>>> ae02433fce390806e88a7d3edd972aaa40b309a6
 
 
     // aside from that will display a random number between 19-120 decided at start of round
